@@ -8,5 +8,17 @@
 
 @import "../assets/libs-css/normalize";
 
+/* Base stuff: variables, typography */
 @import "typography.scss";
-@import "base.scss"
+@import "base.scss";
+
+
+/* Layouts */
+@import "layouts/layout-center.scss";
+@import "layouts/layout-2column.scss";
+
+/* Components */
+@import "components/header.scss";
+@import "components/title.scss";
+@import "components/content.scss";
+@import "components/save-the-date.scss";

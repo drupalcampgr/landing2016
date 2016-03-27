@@ -1,0 +1,32 @@
+// The content component.
+
+.content {
+  background-image: url('../assets/images/content-bg.png');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position:center top;
+  background-size: cover;
+  position: relative;
+
+  &__page {
+    max-width: 770px;
+    margin: 0 auto;
+  }
+
+  &__countdown {
+    padding: 60px 0 90px 0;
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+    color: $blue-light;
+  }
+
+  &__drupal {
+    position: absolute;
+    bottom: -(140/2)*1px;
+    left: 50%;
+    margin-left: -(207/2)*1px;
+
+
+  }
+}
