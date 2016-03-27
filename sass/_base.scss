@@ -4,14 +4,19 @@ $particles-bg:								#002449;
 $dark-blue:									#0050a2;
 $lighter-blue:								#005fac;
 $logo-width:								250px;
-$container:									800px;
+
+$page-width:									800px;
+
+// Layout
+$gutter: 40px;
+
 
 // Some useful generalizations
 img {
 	max-width: 100%;
 }
 .container {
-	max-width: $container;
+	max-width: $page-width;
 	margin-left: auto;
 	margin-right: auto;
 	.content {
@@ -94,7 +99,7 @@ img {
 .footer-message {
 	margin: 72px auto 100px auto;
 	text-align: center;
-	max-width: $container;
+	max-width: $page-width;
 }
 
 // Social icons on footer
@@ -130,20 +135,7 @@ img {
 
 // All Mobile overrides
 @media (max-width: 960px) {
-	// Hero
-	.particles-container {
-		height: 40vh;
-		> #particles-js {
-			height: 40vh;
-		}
-		.logo {
-			margin-left: -$logo-width / 4;
-			margin-top: -$logo-width / 4;
-			img {
-				max-width: $logo-width / 2;
-			}
-		}
-	}
+
 	// Mailchimp
 	.subscription form {
 		input[type='email'] {

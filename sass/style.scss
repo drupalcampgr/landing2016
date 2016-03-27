@@ -8,5 +8,13 @@
 
 @import "../assets/libs-css/normalize";
 
+/* Base stuff: variables, typography */
 @import "typography.scss";
-@import "base.scss"
+@import "base.scss";
+
+
+/* Layouts */
+@import "layouts/layout-center.scss";
+
+/* Components */
+@import "components/header.scss";

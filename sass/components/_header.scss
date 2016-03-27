@@ -1,0 +1,13 @@
+// The header component.
+
+.header {
+  background-image: url('../assets/images/header-bg.png');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+
+  &__image {
+    display: block; // To get rid of the bottom spacing.
+  }
+}
