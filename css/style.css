@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Source+Sans+Pro:400,600,300,400italic,600italic);
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700);
 /* line 5, ../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -504,52 +504,70 @@ th {
 }
 
 /* Base stuff: variables, typography */
-/* line 7, ../sass/_typography.scss */
+/* line 12, ../sass/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", arial, sans-serif;
+  font-family: "Libre Baskerville", serif;
+  margin: 24px 0;
 }
 
-/* line 10, ../sass/_typography.scss */
+/* line 17, ../sass/_typography.scss */
 h1 {
   font-weight: 700;
 }
 
-/* line 15, ../sass/_typography.scss */
-p, span, a {
-  font-family: "Source Sans Pro", arial, sans-serif;
+/* line 21, ../sass/_typography.scss */
+p {
   margin: 24px 0;
-  line-height: 24px;
 }
 
-/* line 15, ../sass/_base.scss */
+/* line 25, ../sass/_typography.scss */
+body {
+  color: #17337b;
+  font-size: 106.25%;
+  line-height: 1.41176em;
+  font-family: "Libre Baskerville", serif;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+/* line 21, ../sass/_base.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 24, ../sass/_base.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 30, ../sass/_base.scss */
 img {
   max-width: 100%;
 }
 
-/* line 18, ../sass/_base.scss */
+/* line 33, ../sass/_base.scss */
 .container {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 22, ../sass/_base.scss */
+/* line 37, ../sass/_base.scss */
 .container .content {
   padding: 10px 25px;
 }
 
-/* line 29, ../sass/_base.scss */
+/* line 44, ../sass/_base.scss */
 .particles-container {
   position: relative;
   width: 100%;
   height: 40vh;
 }
-/* line 33, ../sass/_base.scss */
+/* line 48, ../sass/_base.scss */
 .particles-container > #particles-js {
   height: 40vh;
   width: 100%;
   background: #002449;
 }
-/* line 38, ../sass/_base.scss */
+/* line 53, ../sass/_base.scss */
 .particles-container .logo {
   position: absolute;
   top: 50%;
@@ -557,29 +575,29 @@ img {
   margin-left: -125px;
   margin-top: -125px;
 }
-/* line 44, ../sass/_base.scss */
+/* line 59, ../sass/_base.scss */
 .particles-container .logo img {
   max-width: 250px;
   height: auto;
 }
 
-/* line 52, ../sass/_base.scss */
+/* line 67, ../sass/_base.scss */
 .subscription {
   margin-top: 20px;
   width: 100%;
   text-align: center;
 }
-/* line 56, ../sass/_base.scss */
+/* line 71, ../sass/_base.scss */
 .subscription form {
   width: 100%;
   text-align: center;
 }
-/* line 61, ../sass/_base.scss */
+/* line 76, ../sass/_base.scss */
 .subscription form div.mc-field-group,
 .subscription form div.clear {
   display: inline;
 }
-/* line 65, ../sass/_base.scss */
+/* line 80, ../sass/_base.scss */
 .subscription form input[type='email'] {
   display: inline-block;
   width: 70%;
@@ -589,13 +607,13 @@ img {
   transition: all 0.2s;
   font-size: 1.2em;
 }
-/* line 73, ../sass/_base.scss */
+/* line 88, ../sass/_base.scss */
 .subscription form input[type='email']:focus {
   outline: none;
   border-width: 0 0 3px 0;
   border-color: #005fac;
 }
-/* line 79, ../sass/_base.scss */
+/* line 94, ../sass/_base.scss */
 .subscription form input[type='submit'] {
   display: inline-block;
   width: 25%;
@@ -606,40 +624,40 @@ img {
   color: #f5f5f5;
   transition: all 0.2s;
 }
-/* line 88, ../sass/_base.scss */
+/* line 103, ../sass/_base.scss */
 .subscription form input[type='submit']:hover, .subscription form input[type='submit']:focus {
   background: #005fac;
   color: #ffffff;
 }
 
-/* line 99, ../sass/_base.scss */
+/* line 114, ../sass/_base.scss */
 .footer-message {
   margin: 72px auto 100px auto;
   text-align: center;
   max-width: 800px;
 }
 
-/* line 106, ../sass/_base.scss */
+/* line 121, ../sass/_base.scss */
 .footer {
   position: fixed;
   width: 100%;
   bottom: 0;
   left: 0;
 }
-/* line 111, ../sass/_base.scss */
+/* line 126, ../sass/_base.scss */
 .footer .social {
   text-align: center;
   padding: 25px;
   background: #fff;
 }
-/* line 115, ../sass/_base.scss */
+/* line 130, ../sass/_base.scss */
 .footer .social > li {
   display: inline-block;
 }
-/* line 117, ../sass/_base.scss */
+/* line 132, ../sass/_base.scss */
 .footer .social > li > a {
   text-transform: uppercase;
-  font-family: "Montserrat", arial, sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 0.7rem;
   text-decoration: none;
   color: #0050a2;
@@ -647,7 +665,7 @@ img {
   padding: 25px 10px;
   transition: all 0.2s ease-in;
 }
-/* line 126, ../sass/_base.scss */
+/* line 141, ../sass/_base.scss */
 .footer .social > li > a:hover {
   border-radius: 2px;
   background: #0050a2;
@@ -655,26 +673,26 @@ img {
 }
 
 @media (max-width: 960px) {
-  /* line 141, ../sass/_base.scss */
+  /* line 156, ../sass/_base.scss */
   .subscription form input[type='email'] {
     width: 100%;
     margin-bottom: 12px;
   }
-  /* line 145, ../sass/_base.scss */
+  /* line 160, ../sass/_base.scss */
   .subscription form input[type='submit'] {
     width: 100%;
   }
 
-  /* line 151, ../sass/_base.scss */
+  /* line 166, ../sass/_base.scss */
   .footer {
     border-top: 1px solid #0050a2;
     box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.25);
   }
-  /* line 154, ../sass/_base.scss */
+  /* line 169, ../sass/_base.scss */
   .footer .social {
     padding: 10px;
   }
-  /* line 156, ../sass/_base.scss */
+  /* line 171, ../sass/_base.scss */
   .footer .social > li > a {
     padding: 10px;
   }
@@ -693,6 +711,24 @@ img {
   padding-right: 0;
 }
 
+/* line 7, ../sass/layouts/_layout-2column.scss */
+.layout-2column {
+  margin-left: -20px;
+  margin-right: -20px;
+  display: table;
+}
+/* line 13, ../sass/layouts/_layout-2column.scss */
+.layout-2column__col-x {
+  display: table-cell;
+  width: 50%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* line 19, ../sass/layouts/_layout-2column.scss */
+.layout-2column__col-x:nth-child(2n+1) {
+  border-right: 1px solid #88d3db;
+}
+
 /* Components */
 /* line 3, ../sass/components/_header.scss */
 .header {
@@ -705,4 +741,105 @@ img {
 /* line 10, ../sass/components/_header.scss */
 .header__image {
   display: block;
+}
+
+/* line 9, ../sass/components/_title.scss */
+.title--medium {
+  font-size: 32px;
+  line-height: 48px;
+  color: #17337b;
+}
+
+/* line 3, ../sass/components/_content.scss */
+.content {
+  background-image: url("../assets/images/content-bg.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  background-size: cover;
+  position: relative;
+}
+/* line 11, ../sass/components/_content.scss */
+.content__page {
+  max-width: 770px;
+  margin: 0 auto;
+}
+/* line 16, ../sass/components/_content.scss */
+.content__countdown {
+  padding: 60px 0 90px 0;
+  font-size: 18px;
+  text-align: center;
+  font-style: italic;
+  color: #88d3db;
+}
+/* line 24, ../sass/components/_content.scss */
+.content__drupal {
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  margin-left: -103.5px;
+}
+
+/* line 3, ../sass/components/_save-the-date.scss */
+.save-the-date {
+  width: 306px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 8, ../sass/components/_save-the-date.scss */
+.save-the-date__date {
+  padding-top: 35px;
+}
+/* line 12, ../sass/components/_save-the-date.scss */
+.save-the-date__title {
+  font-weight: 700;
+  color: #0275bb;
+  font-size: 50px;
+  letter-spacing: -0.25px;
+  font-size: 46px;
+  letter-spacing: -1.25px;
+  margin: 10px 0;
+}
+/* line 26, ../sass/components/_save-the-date.scss */
+.save-the-date__location {
+  font-style: italic;
+  font-size: 20px;
+  color: #17337b;
+  position: relative;
+}
+/* line 32, ../sass/components/_save-the-date.scss */
+.save-the-date__location:before, .save-the-date__location:after {
+  content: '';
+  width: 76px;
+  position: absolute;
+  height: 2px;
+  background-color: #17337b;
+  top: 10px;
+  left: 0;
+}
+/* line 42, ../sass/components/_save-the-date.scss */
+.save-the-date__location:before {
+  left: auto;
+  right: 0;
+}
+/* line 48, ../sass/components/_save-the-date.scss */
+.save-the-date__social {
+  background-image: url("../assets/images/save-the-date__social-bg.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  height: 80px;
+}
+/* line 55, ../sass/components/_save-the-date.scss */
+.save-the-date__social-link {
+  display: inline-block;
+  margin: 17px 0;
+}
+/* line 59, ../sass/components/_save-the-date.scss */
+.save-the-date__social-link p {
+  margin: 0;
+}
+/* line 64, ../sass/components/_save-the-date.scss */
+.save-the-date__social-link--twitter {
+  position: relative;
+  top: 5px;
 }

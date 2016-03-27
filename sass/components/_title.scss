@@ -1,0 +1,13 @@
+// The title component
+//
+// .title--medium The medium variant. Used in content.
+
+.title {
+
+}
+
+.title--medium {
+  font-size: 32px;
+  line-height: (2*$base-line-height)*1px;
+  color: $blue-dark;
+}

@@ -13,6 +13,18 @@
   <!-- end head -->
   </head>
 <body>
+
+  <!-- FB like start-->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <!-- FB like end-->
+
   <header class="header">
     <div class="header__inner layout-center">
       <img class="header__image" alt="Drupal Camp Greece Athens 2016" src="assets/images/logo.png">
@@ -20,15 +32,49 @@
   </header>
   <main class="content">
     <div class="content__inner layout-center">
+
       <article class="save-the-date">
         <img class="save-the-date__date" src="assets/images/1-3-july.png" alt="1-3 July" />
         <h1 class="save-the-date__title">Save the date</h1>
         <div class="save-the-date__location">Athens, Greece</div>
         <div class="save-the-date__social">
-          @todo Like Share
+
+          <div class="save-the-date__social-link save-the-date__social-link--facebook">
+            <div class="fb-like" data-href="https://www.facebook.com/drupalgr" data-width="85" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+          </div>
+          <div class="save-the-date__social-link save-the-date__social-link--twitter">
+            <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+          </div>
         </div>
 
       </article>
+
+
+      <article class="content__page">
+        <h1 class="title title--medium">DrupalCamp Greece is back! Bigger! Better!</h1>
+        <div class="layout-2column">
+          <div class="layout-2column__col-x">
+            DrupalCamp Greece is a conference that brings together web developers, designers, site-builders, content administrators and simple curious minds to learn, network and discuss about Drupal, Design, Development and Cutting Edge Web Technologies.
+          </div>
+          <div class="layout-2column__col-x">
+            Drupal is strong because its community is stronger. With the release of Drupal 8 there is so much to hear and talk about that you’ll need lots of notes… Come for the code, stay for the community!
+          </div>
+        </div>
+        </div>
+
+        <div class="content__countdown">
+          101 Days, 8 hours, 7 minutes & 24 seconds until the event
+        </div>
+
+        <div class="content__drupal">
+          <img src="assets/images/content-drupal-logo.png" align="drupal logo" />
+        </div>
+
+
+      </article>
+
+
     </div>
   </main>
   <footer>

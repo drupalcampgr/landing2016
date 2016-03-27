@@ -1,19 +1,30 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Source+Sans+Pro:400,600,300,400italic,600italic);
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700);
 
-$heading-font:						'Montserrat', arial, sans-serif;
-$body-font:							'Source Sans Pro', arial, sans-serif;
 
+$libre: 'Libre Baskerville', serif;
+
+$heading-font: $libre;
+$body-font: $libre;
+
+$base-line-height: 24;
+$base-font-size: 17;
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: $heading-font;
+  margin: ($base-line-height)*1px 0;
 }
+
 h1 {
 	font-weight: 700;
-
 }
 
-p, span, a {
-	font-family: $body-font;
-	margin: 24px 0;
-	line-height: 24px;
+p {
+	margin: ($base-line-height)*1px 0;
+}
+
+body {
+  color: #17337b;
+  font-size: ($base-font-size/16)*100%;
+  line-height: $base-line-height/$base-font-size*1em;
+  font-family: $body-font;
 }
