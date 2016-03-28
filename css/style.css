@@ -555,148 +555,6 @@ img {
   padding: 10px 25px;
 }
 
-/* line 44, ../sass/_base.scss */
-.particles-container {
-  position: relative;
-  width: 100%;
-  height: 40vh;
-}
-/* line 48, ../sass/_base.scss */
-.particles-container > #particles-js {
-  height: 40vh;
-  width: 100%;
-  background: #002449;
-}
-/* line 53, ../sass/_base.scss */
-.particles-container .logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -125px;
-  margin-top: -125px;
-}
-/* line 59, ../sass/_base.scss */
-.particles-container .logo img {
-  max-width: 250px;
-  height: auto;
-}
-
-/* line 67, ../sass/_base.scss */
-.subscription {
-  margin-top: 20px;
-  width: 100%;
-  text-align: center;
-}
-/* line 71, ../sass/_base.scss */
-.subscription form {
-  width: 100%;
-  text-align: center;
-}
-/* line 76, ../sass/_base.scss */
-.subscription form div.mc-field-group,
-.subscription form div.clear {
-  display: inline;
-}
-/* line 80, ../sass/_base.scss */
-.subscription form input[type='email'] {
-  display: inline-block;
-  width: 70%;
-  height: 50px;
-  border-width: 0 0 1px 0;
-  border-color: #0050a2;
-  transition: all 0.2s;
-  font-size: 1.2em;
-}
-/* line 88, ../sass/_base.scss */
-.subscription form input[type='email']:focus {
-  outline: none;
-  border-width: 0 0 3px 0;
-  border-color: #005fac;
-}
-/* line 94, ../sass/_base.scss */
-.subscription form input[type='submit'] {
-  display: inline-block;
-  width: 25%;
-  height: 50px;
-  border-radius: 2px;
-  border: none;
-  background: #0050a2;
-  color: #f5f5f5;
-  transition: all 0.2s;
-}
-/* line 103, ../sass/_base.scss */
-.subscription form input[type='submit']:hover, .subscription form input[type='submit']:focus {
-  background: #005fac;
-  color: #ffffff;
-}
-
-/* line 114, ../sass/_base.scss */
-.footer-message {
-  margin: 72px auto 100px auto;
-  text-align: center;
-  max-width: 800px;
-}
-
-/* line 121, ../sass/_base.scss */
-.footer {
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-}
-/* line 126, ../sass/_base.scss */
-.footer .social {
-  text-align: center;
-  padding: 25px;
-  background: #fff;
-}
-/* line 130, ../sass/_base.scss */
-.footer .social > li {
-  display: inline-block;
-}
-/* line 132, ../sass/_base.scss */
-.footer .social > li > a {
-  text-transform: uppercase;
-  font-family: "Libre Baskerville", serif;
-  font-size: 0.7rem;
-  text-decoration: none;
-  color: #0050a2;
-  font-weight: 700;
-  padding: 25px 10px;
-  transition: all 0.2s ease-in;
-}
-/* line 141, ../sass/_base.scss */
-.footer .social > li > a:hover {
-  border-radius: 2px;
-  background: #0050a2;
-  color: #fff;
-}
-
-@media (max-width: 960px) {
-  /* line 156, ../sass/_base.scss */
-  .subscription form input[type='email'] {
-    width: 100%;
-    margin-bottom: 12px;
-  }
-  /* line 160, ../sass/_base.scss */
-  .subscription form input[type='submit'] {
-    width: 100%;
-  }
-
-  /* line 166, ../sass/_base.scss */
-  .footer {
-    border-top: 1px solid #0050a2;
-    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.25);
-  }
-  /* line 169, ../sass/_base.scss */
-  .footer .social {
-    padding: 10px;
-  }
-  /* line 171, ../sass/_base.scss */
-  .footer .social > li > a {
-    padding: 10px;
-  }
-}
 /* Layouts */
 /* line 18, ../sass/layouts/_layout-center.scss */
 .layout-center {
@@ -725,7 +583,7 @@ img {
   padding-right: 20px;
 }
 /* line 19, ../sass/layouts/_layout-2column.scss */
-.layout-2column__col-x:nth-child(2n+1) {
+.layout-2column__col-x:not(.plain):nth-child(2n+1) {
   border-right: 1px solid #88d3db;
 }
 
@@ -743,11 +601,20 @@ img {
   display: block;
 }
 
-/* line 9, ../sass/components/_title.scss */
+/* line 12, ../sass/components/_title.scss */
 .title--medium {
   font-size: 32px;
   line-height: 48px;
   color: #17337b;
+}
+
+/* line 19, ../sass/components/_title.scss */
+.title--highlighted {
+  color: #fff;
+  text-shadow: 0px 0px 4px #e6e6e6;
+  font-size: 55px;
+  font-weight: 700;
+  letter-spacing: -0.25px;
 }
 
 /* line 3, ../sass/components/_content.scss */
@@ -842,4 +709,119 @@ img {
 .save-the-date__social-link--twitter {
   position: relative;
   top: 5px;
+}
+
+/* line 3, ../sass/components/_newsletter.scss */
+.newsletter {
+  background-color: #0275bb;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+/* line 9, ../sass/components/_newsletter.scss */
+.newsletter__title {
+  margin-top: 132px;
+  margin-bottom: 35px;
+}
+/* line 14, ../sass/components/_newsletter.scss */
+.newsletter__text {
+  max-width: 370px;
+  margin-left: auto;
+  margin-right: auto;
+  font-style: italic;
+  margin-bottom: 35px;
+}
+/* line 22, ../sass/components/_newsletter.scss */
+.newsletter__form {
+  position: relative;
+  width: 360px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+/* line 29, ../sass/components/_newsletter.scss */
+.newsletter__email {
+  padding: 26px 24px;
+  font-size: 14px;
+  line-height: 14px;
+  width: 360px;
+  border: 0;
+  border-bottom: 1px solid #88d3db;
+  color: #0275bb;
+}
+/* line 38, ../sass/components/_newsletter.scss */
+.newsletter__email::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #0275bb;
+}
+/* line 42, ../sass/components/_newsletter.scss */
+.newsletter__email:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #0275bb;
+  opacity: 1;
+}
+/* line 47, ../sass/components/_newsletter.scss */
+.newsletter__email::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #0275bb;
+  opacity: 1;
+}
+/* line 52, ../sass/components/_newsletter.scss */
+.newsletter__email:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #0275bb;
+}
+/* line 57, ../sass/components/_newsletter.scss */
+.newsletter__submit {
+  width: 33px;
+  height: 22px;
+  border: 0;
+  background: black;
+  position: absolute;
+  z-index: 10;
+  top: 24px;
+  right: 24px;
+}
+
+/* line 3, ../sass/components/_social.scss */
+.social {
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  background-color: #0275bb;
+}
+/* line 9, ../sass/components/_social.scss */
+.social a {
+  color: #88d3db;
+}
+/* line 13, ../sass/components/_social.scss */
+.social__title {
+  margin-top: 100px;
+  margin-bottom: 35px;
+}
+/* line 18, ../sass/components/_social.scss */
+.social__text {
+  max-width: 370px;
+  margin-left: auto;
+  margin-right: auto;
+  font-style: italic;
+  margin-bottom: 35px;
+  margin-top: 35px;
+}
+/* line 26, ../sass/components/_social.scss */
+.social__text--small {
+  font-size: 15px;
+}
+/* line 31, ../sass/components/_social.scss */
+.social__copy {
+  font-size: 11px;
+  letter-spacing: -0.1px;
+  margin: 35px 0;
+}
+/* line 37, ../sass/components/_social.scss */
+.social__copyright {
+  text-align: left;
+}
+/* line 41, ../sass/components/_social.scss */
+.social__devs {
+  text-align: right;
 }

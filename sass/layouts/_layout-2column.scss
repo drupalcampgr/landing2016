@@ -16,7 +16,7 @@
     padding-left: $gutter/2;
     padding-right: $gutter/2;
 
-    &:nth-child(2n+1) {
+    &:not(.plain):nth-child(2n+1) {
       border-right: 1px solid $blue-light;
     }
   }

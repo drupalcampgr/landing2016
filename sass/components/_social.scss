@@ -1,0 +1,44 @@
+// The social component.
+
+.social {
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  background-color: #0275bb;
+
+  a {
+    color: $blue-light;
+  }
+
+  &__title {
+    margin-top: 100px;
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: italic;
+    margin-bottom: 35px;
+    margin-top: 35px;
+
+    &--small {
+      font-size: 15px;
+    }
+  }
+
+  &__copy {
+    font-size: 11px;
+    letter-spacing: -0.1px;
+    margin: 35px 0;
+  }
+
+  &__copyright {
+    text-align: left;
+  }
+
+  &__devs{
+    text-align: right;
+  }
+}
