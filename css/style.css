@@ -613,6 +613,7 @@ img {
   color: #fff;
   text-shadow: 0px 0px 4px #e6e6e6;
   font-size: 55px;
+  line-height: 48px;
   font-weight: 700;
   letter-spacing: -0.25px;
 }
@@ -714,16 +715,19 @@ img {
 /* line 3, ../sass/components/_newsletter.scss */
 .newsletter {
   background-color: #0275bb;
+  background-image: url("../assets/images/newsletter-bg.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
   color: #fff;
   text-align: center;
   overflow: hidden;
 }
-/* line 9, ../sass/components/_newsletter.scss */
+/* line 12, ../sass/components/_newsletter.scss */
 .newsletter__title {
   margin-top: 132px;
   margin-bottom: 35px;
 }
-/* line 14, ../sass/components/_newsletter.scss */
+/* line 17, ../sass/components/_newsletter.scss */
 .newsletter__text {
   max-width: 370px;
   margin-left: auto;
@@ -731,14 +735,14 @@ img {
   font-style: italic;
   margin-bottom: 35px;
 }
-/* line 22, ../sass/components/_newsletter.scss */
+/* line 25, ../sass/components/_newsletter.scss */
 .newsletter__form {
   position: relative;
   width: 360px;
   margin: 0 auto;
   margin-bottom: 100px;
 }
-/* line 29, ../sass/components/_newsletter.scss */
+/* line 32, ../sass/components/_newsletter.scss */
 .newsletter__email {
   padding: 26px 24px;
   font-size: 14px;
@@ -748,34 +752,35 @@ img {
   border-bottom: 1px solid #88d3db;
   color: #0275bb;
 }
-/* line 38, ../sass/components/_newsletter.scss */
+/* line 41, ../sass/components/_newsletter.scss */
 .newsletter__email::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: #0275bb;
 }
-/* line 42, ../sass/components/_newsletter.scss */
+/* line 45, ../sass/components/_newsletter.scss */
 .newsletter__email:-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: #0275bb;
   opacity: 1;
 }
-/* line 47, ../sass/components/_newsletter.scss */
+/* line 50, ../sass/components/_newsletter.scss */
 .newsletter__email::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: #0275bb;
   opacity: 1;
 }
-/* line 52, ../sass/components/_newsletter.scss */
+/* line 55, ../sass/components/_newsletter.scss */
 .newsletter__email:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: #0275bb;
 }
-/* line 57, ../sass/components/_newsletter.scss */
+/* line 60, ../sass/components/_newsletter.scss */
 .newsletter__submit {
   width: 33px;
   height: 22px;
   border: 0;
-  background: black;
+  background: url("../assets/images/submit.jpg");
+  text-indent: -66666px;
   position: absolute;
   z-index: 10;
   top: 24px;
@@ -787,18 +792,20 @@ img {
   color: #fff;
   text-align: center;
   overflow: hidden;
-  background-color: #0275bb;
+  background-image: url("../assets/images/footer-left-bg.jpg"), url("../assets/images/footer-right-bg.jpg"), url("../assets/images/footer-center-bg.jpg");
+  background-position: left top, right top, center top;
+  background-repeat: no-repeat, no-repeat, repeat-x;
 }
-/* line 9, ../sass/components/_social.scss */
+/* line 11, ../sass/components/_social.scss */
 .social a {
   color: #88d3db;
 }
-/* line 13, ../sass/components/_social.scss */
+/* line 15, ../sass/components/_social.scss */
 .social__title {
   margin-top: 100px;
   margin-bottom: 35px;
 }
-/* line 18, ../sass/components/_social.scss */
+/* line 20, ../sass/components/_social.scss */
 .social__text {
   max-width: 370px;
   margin-left: auto;
@@ -807,21 +814,46 @@ img {
   margin-bottom: 35px;
   margin-top: 35px;
 }
-/* line 26, ../sass/components/_social.scss */
+/* line 28, ../sass/components/_social.scss */
 .social__text--small {
   font-size: 15px;
 }
-/* line 31, ../sass/components/_social.scss */
+/* line 33, ../sass/components/_social.scss */
 .social__copy {
   font-size: 11px;
   letter-spacing: -0.1px;
   margin: 35px 0;
 }
-/* line 37, ../sass/components/_social.scss */
+/* line 39, ../sass/components/_social.scss */
 .social__copyright {
   text-align: left;
 }
-/* line 41, ../sass/components/_social.scss */
+/* line 43, ../sass/components/_social.scss */
 .social__devs {
   text-align: right;
+}
+/* line 47, ../sass/components/_social.scss */
+.social__link {
+  display: inline-block;
+  width: 102px;
+  height: 94px;
+  position: relative;
+}
+/* line 53, ../sass/components/_social.scss */
+.social__link img {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+}
+/* line 63, ../sass/components/_social.scss */
+.social__link--facebook {
+  background: white;
+}
+/* line 67, ../sass/components/_social.scss */
+.social__link--twitter {
+  background: #0275bb;
 }

@@ -4,7 +4,9 @@
   color: #fff;
   text-align: center;
   overflow: hidden;
-  background-color: #0275bb;
+  background-image: url('../assets/images/footer-left-bg.jpg'), url('../assets/images/footer-right-bg.jpg'), url('../assets/images/footer-center-bg.jpg');
+background-position: left top, right top, center top;
+background-repeat: no-repeat, no-repeat, repeat-x;
 
   a {
     color: $blue-light;
@@ -41,4 +43,30 @@
   &__devs{
     text-align: right;
   }
+
+  &__link {
+    display: inline-block;
+    width: 102px;
+    height: 94px;
+    position: relative;
+
+    img {
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translateY(-50%) translateX(-50%);
+      -ms-transform: translateY(-50%) translateX(-50%);
+      transform: translateY(-50%) translateX(-50%);
+    }
+
+    &--facebook {
+      background: white;
+    }
+
+    &--twitter {
+      background: #0275bb;
+    }
+  }
+
 }

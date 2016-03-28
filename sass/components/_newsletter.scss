@@ -2,6 +2,9 @@
 
 .newsletter {
   background-color: #0275bb;
+  background-image: url('../assets/images/newsletter-bg.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
   color: #fff;
   text-align: center;
   overflow: hidden;
@@ -58,7 +61,8 @@
     width: 33px;
     height: 22px;
     border: 0;
-    background: black;
+    background: url('../assets/images/submit.jpg');
+    text-indent: -66666px;
     position: absolute;
     z-index: 10;
     top: 24px;
