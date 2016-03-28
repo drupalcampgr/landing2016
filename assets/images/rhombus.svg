@@ -1,0 +1,4 @@
+<svg class="svg-rhombus" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="12" height="21" viewBox="0 0 12 21" enable-background="new 0 0 12 21" xml:space="preserve">
+  <path class="svg-rhombus svg-rombus__triangle svg-rombus__triangle--top" fill="#E9F7FE" d="M11.79 10.62H0.21c0.02 0.03 0.03 0.06 0.04 0.08H0.25l5.73 9.93L6 20.66l0.02-0.02 5.74-9.93h0C11.76 10.67 11.78 10.64 11.79 10.62z"/>
+  <path class="svg-rhombus svg-rombus__triangle svg-rombus__triangle--bottom" fill="#000442" d="M0.21 10.58h11.58c-0.01-0.03-0.03-0.05-0.04-0.08h0L6.02 0.56 6 0.54 5.99 0.56l-5.73 9.93h0C0.24 10.53 0.22 10.55 0.21 10.58z"/>
+</svg>
