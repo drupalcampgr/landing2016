@@ -1,13 +1,26 @@
 // The title component
 //
 // .title--medium The medium variant. Used in content.
+// .title--highlighted The highlighted variant, used on slices with bg color.
+
 
 .title {
 
 }
 
+// The medium variant.
 .title--medium {
   font-size: 32px;
   line-height: (2*$base-line-height)*1px;
   color: $blue-dark;
+}
+
+// The highlighted variant.
+.title--highlighted {
+  color: #fff;
+  text-shadow: 0px 0px 4px lighten(black, 90%);
+  font-size: 55px;
+  line-height: (2*$base-line-height)*1px;
+  font-weight: 700;
+  letter-spacing: -0.25px;
 }

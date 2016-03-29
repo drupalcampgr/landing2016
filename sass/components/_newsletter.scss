@@ -1,0 +1,71 @@
+// The newsletter component
+
+.newsletter {
+  background-color: #0275bb;
+  background-image: url('../assets/images/newsletter-bg.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+
+  &__title {
+    margin-top: 132px;
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: italic;
+    margin-bottom: 35px;
+  }
+
+  &__form {
+    position: relative;
+    width: 360px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+
+  &__email {
+    padding: 26px 24px;
+    font-size: 14px;
+    line-height: 14px;
+    width: 360px;
+    border: 0;
+    border-bottom: 1px solid #88d3db;
+    color: #0275bb;
+
+    &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        color:    #0275bb;
+    }
+
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+       color:    #0275bb;
+       opacity:  1;
+    }
+
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+       color:    #0275bb;
+       opacity:  1;
+    }
+
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+       color:    #0275bb;
+    }
+  }
+
+  &__submit {
+    width: 33px;
+    height: 22px;
+    border: 0;
+    background: url('../assets/images/submit.jpg');
+    text-indent: -66666px;
+    position: absolute;
+    z-index: 10;
+    top: 24px;
+    right: 24px;
+  }
+}
