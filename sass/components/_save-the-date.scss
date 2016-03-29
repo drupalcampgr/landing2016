@@ -1,0 +1,68 @@
+// The save-the-date component
+
+.save-the-date {
+  width: 306px;
+  margin: 0 auto;
+  text-align: center;
+
+  &__date {
+    padding-top: 35px;
+  }
+
+  &__title {
+    font-weight: 700;
+    color: #0275bb;
+    // With the Literata font
+    font-size: 50px;
+    letter-spacing: -0.25px;
+    // With current font
+    font-size: 46px;
+    letter-spacing: -1.25px;
+    margin: 10px 0;
+
+
+  }
+
+  &__location {
+    font-style: italic;
+    font-size: 20px;
+    color: $blue-dark;
+    position: relative;
+
+    &:before,
+    &:after {
+      content: '';
+      width: 76px;
+      position: absolute;
+      height: 2px;
+      background-color: $blue-dark;
+      top:10px;
+      left: 0;
+    }
+    &:before {
+      left: auto;
+      right: 0;
+    }
+  }
+
+  &__social {
+    background-image: url('../assets/images/save-the-date__social-bg.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 80px;
+  }
+
+  &__social-link {
+    display: inline-block;
+    margin: 17px 0;
+
+    p {
+      margin: 0; // As the widgets contain p tags.
+    }
+  }
+
+  &__social-link--twitter {
+    position: relative;
+    top: 5px;
+  }
+}
