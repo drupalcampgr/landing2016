@@ -1,14 +1,25 @@
 // The content component.
 
 .content {
-  background-image: url('../assets/images/content-bg.png');
+  background-image: url('../assets/images/content-bg.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position:center top;
   background-size: cover;
   position: relative;
 
+  &__inner {
+    background:
+      url('../assets/images/content-clouds-left.png') 32px 226px,
+      url('../assets/images/content-clouds-left.png') 90% 211px,
+      url('../assets/images/content-emphasis.png') center top;
+    background-repeat: no-repeat;
+    background-size: auto, auto ,cover;
+    position: relative;
+  }
+
   &__page {
+    background: url('../assets/images/content-circle.png') center top no-repeat;
     max-width: 770px;
     margin: 0 auto;
   }
@@ -26,7 +37,29 @@
     bottom: -(140/2)*1px;
     left: 50%;
     margin-left: -(207/2)*1px;
-
-
   }
+
+  &__flying {
+    position: absolute;
+    top: 315px;
+    left: 5px;
+    width: 184px + 116px +15px;
+  }
+
+  &__airplane {
+    background: url('../assets/images/content-airplane.png') center top no-repeat;
+    width: 184px;
+    height: 96px;
+    float: left;
+  }
+
+  &__mas-psekazoune {
+    background: url('../assets/images/content-mas-psekazoune.png') center top no-repeat;
+    width: 116px;
+    height: 32px;
+    float: right;
+    margin-left: 15px;
+    margin-top: 54px;
+  }
+
 }

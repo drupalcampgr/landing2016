@@ -4,23 +4,36 @@
   width: 306px;
   margin: 0 auto;
   text-align: center;
+  position: relative;
+
+  &:after {
+    content: '';
+    background-image: url('../assets/images/save-the-date__social-bg.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    width: 202px;
+    height: 10px;
+    position: absolute;
+    top:0;
+    left: 50%;
+    margin-left: -101px;
+    // @todo Do prefixes more elegantly.
+    -webkit-transform: rotate(180deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: rotate(180deg); /* IE 9 */
+    transform: rotate(180deg); /* IE 10, Fx 16+, Op 12.1+ */
+  }
 
   &__date {
-    padding-top: 35px;
+    padding-top: 48px;
   }
 
   &__title {
     font-weight: 700;
     color: #0275bb;
-    // With the Literata font
-    font-size: 50px;
-    letter-spacing: -0.25px;
-    // With current font
-    font-size: 46px;
-    letter-spacing: -1.25px;
+    font-size: 47px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
     margin: 10px 0;
-
-
   }
 
   &__location {

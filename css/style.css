@@ -620,7 +620,7 @@ img {
 
 /* line 3, ../sass/components/_content.scss */
 .content {
-  background-image: url("../assets/images/content-bg.png");
+  background-image: url("../assets/images/content-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center top;
@@ -628,11 +628,19 @@ img {
   position: relative;
 }
 /* line 11, ../sass/components/_content.scss */
+.content__inner {
+  background: url("../assets/images/content-clouds-left.png") 32px 226px, url("../assets/images/content-clouds-left.png") 90% 211px, url("../assets/images/content-emphasis.png") center top;
+  background-repeat: no-repeat;
+  background-size: auto, auto ,cover;
+  position: relative;
+}
+/* line 21, ../sass/components/_content.scss */
 .content__page {
+  background: url("../assets/images/content-circle.png") center top no-repeat;
   max-width: 770px;
   margin: 0 auto;
 }
-/* line 16, ../sass/components/_content.scss */
+/* line 27, ../sass/components/_content.scss */
 .content__countdown {
   padding: 60px 0 90px 0;
   font-size: 18px;
@@ -640,12 +648,35 @@ img {
   font-style: italic;
   color: #88d3db;
 }
-/* line 24, ../sass/components/_content.scss */
+/* line 35, ../sass/components/_content.scss */
 .content__drupal {
   position: absolute;
   bottom: -70px;
   left: 50%;
   margin-left: -103.5px;
+}
+/* line 42, ../sass/components/_content.scss */
+.content__flying {
+  position: absolute;
+  top: 315px;
+  left: 5px;
+  width: 315px;
+}
+/* line 49, ../sass/components/_content.scss */
+.content__airplane {
+  background: url("../assets/images/content-airplane.png") center top no-repeat;
+  width: 184px;
+  height: 96px;
+  float: left;
+}
+/* line 56, ../sass/components/_content.scss */
+.content__mas-psekazoune {
+  background: url("../assets/images/content-mas-psekazoune.png") center top no-repeat;
+  width: 116px;
+  height: 32px;
+  float: right;
+  margin-left: 15px;
+  margin-top: 54px;
 }
 
 /* line 3, ../sass/components/_save-the-date.scss */
@@ -653,29 +684,48 @@ img {
   width: 306px;
   margin: 0 auto;
   text-align: center;
+  position: relative;
 }
-/* line 8, ../sass/components/_save-the-date.scss */
+/* line 9, ../sass/components/_save-the-date.scss */
+.save-the-date:after {
+  content: '';
+  background-image: url("../assets/images/save-the-date__social-bg.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  width: 202px;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -101px;
+  -webkit-transform: rotate(180deg);
+  /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+  -ms-transform: rotate(180deg);
+  /* IE 9 */
+  transform: rotate(180deg);
+  /* IE 10, Fx 16+, Op 12.1+ */
+}
+/* line 26, ../sass/components/_save-the-date.scss */
 .save-the-date__date {
-  padding-top: 35px;
+  padding-top: 48px;
 }
-/* line 12, ../sass/components/_save-the-date.scss */
+/* line 30, ../sass/components/_save-the-date.scss */
 .save-the-date__title {
   font-weight: 700;
   color: #0275bb;
-  font-size: 50px;
-  letter-spacing: -0.25px;
-  font-size: 46px;
-  letter-spacing: -1.25px;
+  font-size: 47px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
   margin: 10px 0;
 }
-/* line 26, ../sass/components/_save-the-date.scss */
+/* line 39, ../sass/components/_save-the-date.scss */
 .save-the-date__location {
   font-style: italic;
   font-size: 20px;
   color: #17337b;
   position: relative;
 }
-/* line 32, ../sass/components/_save-the-date.scss */
+/* line 45, ../sass/components/_save-the-date.scss */
 .save-the-date__location:before, .save-the-date__location:after {
   content: '';
   width: 76px;
@@ -685,28 +735,28 @@ img {
   top: 10px;
   left: 0;
 }
-/* line 42, ../sass/components/_save-the-date.scss */
+/* line 55, ../sass/components/_save-the-date.scss */
 .save-the-date__location:before {
   left: auto;
   right: 0;
 }
-/* line 48, ../sass/components/_save-the-date.scss */
+/* line 61, ../sass/components/_save-the-date.scss */
 .save-the-date__social {
   background-image: url("../assets/images/save-the-date__social-bg.png");
   background-position: center bottom;
   background-repeat: no-repeat;
   height: 80px;
 }
-/* line 55, ../sass/components/_save-the-date.scss */
+/* line 68, ../sass/components/_save-the-date.scss */
 .save-the-date__social-link {
   display: inline-block;
   margin: 17px 0;
 }
-/* line 59, ../sass/components/_save-the-date.scss */
+/* line 72, ../sass/components/_save-the-date.scss */
 .save-the-date__social-link p {
   margin: 0;
 }
-/* line 64, ../sass/components/_save-the-date.scss */
+/* line 77, ../sass/components/_save-the-date.scss */
 .save-the-date__social-link--twitter {
   position: relative;
   top: 5px;
