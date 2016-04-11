@@ -27,7 +27,13 @@
 
   <header class="header">
     <div class="header__inner layout-center">
-      <img class="header__image" alt="Drupal Camp Greece Athens 2016" src="assets/images/logo.png">
+      <!-- Responsive Image -->
+      <picture>
+        <source srcset="assets/images/mobile-logo.png" media="(max-width: 767px)" alt="Drupal Camp Greece Athens 2016 mobile logo">
+        <source class="header__image" srcset="assets/images/logo.png" alt="Drupal Camp Greece Athens 2016 logo">
+        <img class="header__image" src="assets/images/logo.png" alt="Drupal Camp Greece Athens 2016 logo">
+      </picture>
+      <!--<img class="header__image" alt="Drupal Camp Greece Athens 2016" src="assets/images/logo.png">-->
     </div>
   </header>
   <main class="content">
