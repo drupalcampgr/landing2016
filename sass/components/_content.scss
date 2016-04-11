@@ -63,3 +63,19 @@
   }
 
 }
+
+// Mobile styles ( visible on all media up to 767px which is usually tablets on portrait orientation )
+@media (max-width: 767px) {
+  .content {
+    &__page {
+      padding-top: 150px;
+    }
+    &__flying {
+      top: 420px;
+    }
+    &__countdown {
+      font-size: 20px;
+      line-height: 1.8;
+    }
+  }
+}

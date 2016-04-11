@@ -69,3 +69,16 @@
     right: 24px;
   }
 }
+
+
+// Mobile styles ( visible on all media up to 767px which is usually tablets on portrait orientation )
+@media (max-width: 767px) {
+  .newsletter {
+    &__form {
+      width: 300px;
+    }
+    &__email {
+      width: 300px;
+    }
+  }
+}
