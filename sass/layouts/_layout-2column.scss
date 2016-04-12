@@ -21,3 +21,18 @@
     }
   }
 }
+// Mobile styles ( visible on all media up to 767px which is usually tablets on portrait orientation )
+@media (max-width: 767px) {
+  .layout-2column,
+  %layout-2column {
+    display: block;
+    &__col-x {
+      display: block;
+      width: 100%;
+      &:not(.plain):nth-child(2n+1) {
+        border-right: none;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
