@@ -11,4 +11,21 @@
     display: block; // To get rid of the bottom spacing.
     margin: 0 auto;
   }
+
+  &__bg-lines {
+    background-image: url('../assets/images/blue-lines.png');
+    background-repeat: repeat-x;
+    margin-top: 33px;
+    position: absolute;
+    width: 100%;
+  }
+
+  @media (max-width: 767px) {
+    .header {
+
+      &__bg-lines {
+        display: none;
+      }
+    }
+  }
 }
