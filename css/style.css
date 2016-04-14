@@ -3,7 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700);
-/* line 5, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,45 +25,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -869,8 +869,9 @@ img {
   width: 360px;
   margin: 0 auto;
   margin-bottom: 100px;
+  overflow: hidden;
 }
-/* line 32, ../sass/components/_newsletter.scss */
+/* line 33, ../sass/components/_newsletter.scss */
 .newsletter__email {
   padding: 26px 24px;
   font-size: 14px;
@@ -880,47 +881,53 @@ img {
   border-bottom: 1px solid #88d3db;
   color: #0275bb;
 }
-/* line 41, ../sass/components/_newsletter.scss */
+/* line 42, ../sass/components/_newsletter.scss */
 .newsletter__email::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: #0275bb;
 }
-/* line 45, ../sass/components/_newsletter.scss */
+/* line 46, ../sass/components/_newsletter.scss */
 .newsletter__email:-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: #0275bb;
   opacity: 1;
 }
-/* line 50, ../sass/components/_newsletter.scss */
+/* line 51, ../sass/components/_newsletter.scss */
 .newsletter__email::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: #0275bb;
   opacity: 1;
 }
-/* line 55, ../sass/components/_newsletter.scss */
+/* line 56, ../sass/components/_newsletter.scss */
 .newsletter__email:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: #0275bb;
 }
-/* line 60, ../sass/components/_newsletter.scss */
+/* line 61, ../sass/components/_newsletter.scss */
 .newsletter__submit {
-  width: 33px;
-  height: 22px;
+  width: 80px;
+  height: 100%;
   border: 0;
-  background: url("../assets/images/submit.jpg");
+  background: url("../assets/images/submit.jpg") no-repeat 50% 50%;
   text-indent: -66666px;
   position: absolute;
   z-index: 10;
-  top: 24px;
-  right: 24px;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.68, -1.55, 0.265, 1.55);
+}
+/* line 73, ../sass/components/_newsletter.scss */
+.newsletter__submit:hover {
+  transform: translateX(15px) scale(1.02);
 }
 
 @media (max-width: 767px) {
-  /* line 77, ../sass/components/_newsletter.scss */
+  /* line 83, ../sass/components/_newsletter.scss */
   .newsletter__form {
     width: 300px;
   }
-  /* line 80, ../sass/components/_newsletter.scss */
+  /* line 86, ../sass/components/_newsletter.scss */
   .newsletter__email {
     width: 300px;
   }
