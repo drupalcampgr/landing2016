@@ -617,6 +617,20 @@ img {
   display: block;
   margin: 0 auto;
 }
+/* line 15, ../sass/components/_header.scss */
+.header__bg-lines {
+  background-image: url("../assets/images/blue-lines.png");
+  background-repeat: repeat-x;
+  margin-top: 33px;
+  position: absolute;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  /* line 26, ../sass/components/_header.scss */
+  .header .header__bg-lines {
+    display: none;
+  }
+}
 
 /* line 12, ../sass/components/_title.scss */
 .title--medium {
