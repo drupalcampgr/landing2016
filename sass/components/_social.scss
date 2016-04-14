@@ -5,8 +5,9 @@
   text-align: center;
   overflow: hidden;
   background-image: url('../assets/images/footer-left-bg.jpg'), url('../assets/images/footer-right-bg.jpg'), url('../assets/images/footer-center-bg.jpg');
-background-position: left top, right top, center top;
-background-repeat: no-repeat, no-repeat, repeat-x;
+  background-position: left top, right top, center top;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  position: relative;
 
   a {
     color: $blue-light;
@@ -68,5 +69,21 @@ background-repeat: no-repeat, no-repeat, repeat-x;
       background: #0275bb;
     }
   }
+
+  &__bg-top-lines {
+    background-image: url('../assets/images/blue-lines.png');
+    background-repeat: repeat-x;
+    width: 100%;
+    position: absolute;
+    top: 25px;
+  }
+
+  &__bg-bottom-lines {
+    background-image: url('../assets/images/blue-lines.png');
+    background-repeat: repeat-x;
+    width: 100%;
+  }
+
+
 
 }
